@@ -1,0 +1,16 @@
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\bin\Debug\EntityFramework.dll
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\bin\Debug\EntityFramework.xml
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csprojAssemblyReference.cache
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form1.resources
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.cache
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CopyComplete
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Migrations.khoitaodb.resources
