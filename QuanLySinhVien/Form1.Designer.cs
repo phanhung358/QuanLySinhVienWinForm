@@ -32,9 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.cbxMonHoc = new System.Windows.Forms.ComboBox();
-            this.bdsMonHoc = new System.Windows.Forms.BindingSource(this.components);
             this.dgvLopHocPhan = new System.Windows.Forms.DataGridView();
-            this.bdsLopHocPhan = new System.Windows.Forms.BindingSource(this.components);
+            this.tenlophocphan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -58,16 +57,15 @@
             this.btnThemSV = new System.Windows.Forms.ToolStripButton();
             this.btnSuaSV = new System.Windows.Forms.ToolStripButton();
             this.dgvSinhVien = new System.Windows.Forms.DataGridView();
-            this.bdsSinhVien = new System.Windows.Forms.BindingSource(this.components);
-            this.tenlophocphan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.masinhvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hodem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaysinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quequan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsMonHoc)).BeginInit();
+            this.bdsSinhVien = new System.Windows.Forms.BindingSource(this.components);
+            this.bdsLopHocPhan = new System.Windows.Forms.BindingSource(this.components);
+            this.bdsMonHoc = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLopHocPhan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsLopHocPhan)).BeginInit();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -77,6 +75,8 @@
             this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsSinhVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsLopHocPhan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsMonHoc)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -117,6 +117,15 @@
             this.dgvLopHocPhan.TabIndex = 2;
             this.dgvLopHocPhan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvLopHocPhan_CellClick);
             // 
+            // tenlophocphan
+            // 
+            this.tenlophocphan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tenlophocphan.DataPropertyName = "tenlophocphan";
+            this.tenlophocphan.HeaderText = "Tên lớp học phần";
+            this.tenlophocphan.MinimumWidth = 6;
+            this.tenlophocphan.Name = "tenlophocphan";
+            this.tenlophocphan.ReadOnly = true;
+            // 
             // toolStripContainer1
             // 
             this.toolStripContainer1.BottomToolStripPanelVisible = false;
@@ -124,12 +133,12 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.toolStrip1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(389, 26);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(399, 26);
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
-            this.toolStripContainer1.Location = new System.Drawing.Point(9, 65);
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 65);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.RightToolStripPanelVisible = false;
-            this.toolStripContainer1.Size = new System.Drawing.Size(389, 26);
+            this.toolStripContainer1.Size = new System.Drawing.Size(399, 26);
             this.toolStripContainer1.TabIndex = 3;
             this.toolStripContainer1.Text = "toolStripContainer1";
             this.toolStripContainer1.TopToolStripPanelVisible = false;
@@ -145,7 +154,7 @@
             this.btnSuaLHP});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(389, 26);
+            this.toolStrip1.Size = new System.Drawing.Size(399, 26);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -187,7 +196,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.Salmon;
-            this.label2.Location = new System.Drawing.Point(743, 11);
+            this.label2.Location = new System.Drawing.Point(683, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(348, 39);
             this.label2.TabIndex = 0;
@@ -369,15 +378,6 @@
             this.dgvSinhVien.Size = new System.Drawing.Size(693, 473);
             this.dgvSinhVien.TabIndex = 6;
             // 
-            // tenlophocphan
-            // 
-            this.tenlophocphan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.tenlophocphan.DataPropertyName = "tenlophocphan";
-            this.tenlophocphan.HeaderText = "Tên lớp học phần";
-            this.tenlophocphan.MinimumWidth = 6;
-            this.tenlophocphan.Name = "tenlophocphan";
-            this.tenlophocphan.ReadOnly = true;
-            // 
             // masinhvien
             // 
             this.masinhvien.DataPropertyName = "masinhvien";
@@ -439,9 +439,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.bdsMonHoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLopHocPhan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsLopHocPhan)).EndInit();
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.ContentPanel.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);
@@ -458,6 +456,8 @@
             this.toolStrip2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsSinhVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsLopHocPhan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsMonHoc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

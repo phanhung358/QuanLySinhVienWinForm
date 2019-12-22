@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\Context.cs" />
+    <Compile Include="DAL\Entity\HocPhan.cs" />
     <Compile Include="DAL\Entity\LopHocPhan.cs" />
     <Compile Include="DAL\Entity\MonHoc.cs" />
     <Compile Include="DAL\Entity\SinhVien.cs" />
@@ -66,9 +67,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201912211254037_khoitaodb.cs" />
-    <Compile Include="Migrations\201912211254037_khoitaodb.designer.cs">
-      <DependentUpon>201912211254037_khoitaodb.cs</DependentUpon>
+    <Compile Include="Migrations\201912220235488_khoitaoDB.cs" />
+    <Compile Include="Migrations\201912220235488_khoitaoDB.designer.cs">
+      <DependentUpon>201912220235488_khoitaoDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -76,8 +77,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912211254037_khoitaodb.resx">
-      <DependentUpon>201912211254037_khoitaodb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201912220235488_khoitaoDB.resx">
+      <DependentUpon>201912220235488_khoitaoDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

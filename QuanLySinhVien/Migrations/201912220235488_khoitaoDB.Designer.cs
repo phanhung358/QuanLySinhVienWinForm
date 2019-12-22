@@ -7,13 +7,13 @@ namespace QuanLySinhVien.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class khoitaodb : IMigrationMetadata
+    public sealed partial class khoitaoDB : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(khoitaodb));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(khoitaoDB));
         
         string IMigrationMetadata.Id
         {
-            get { return "201912211254037_khoitaodb"; }
+            get { return "201912220235488_khoitaoDB"; }
         }
         
         string IMigrationMetadata.Source

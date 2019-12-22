@@ -17,6 +17,7 @@ namespace QuanLySinhVien.DAL
         }
         public DbSet<MonHoc> MonHocDbset { get; set; }
         public DbSet<LopHocPhan> LopHocPhanDbset { get; set; }
+        public DbSet<HocPhan> HocPhanDbset { get; set; }
         public DbSet<SinhVien> SinhVienDbset { get; set; }
     }
 }

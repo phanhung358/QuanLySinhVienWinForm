@@ -13,4 +13,4 @@ C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySi
 C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CopyComplete
 C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
-C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Migrations.khoitaodb.resources
+C:\Users\PHAN HUNG\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Migrations.khoitaoDB.resources

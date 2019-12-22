@@ -35,12 +35,24 @@ namespace QuanLySinhVien
         private void DgvLopHocPhan_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var lophocphan = (LopHocPhan)bdsLopHocPhan.Current;
-            bdsSinhVien.DataSource = SinhVien.GetSVtheoMaLop(lophocphan.malophocphan);
-            dgvSinhVien.DataSource = bdsSinhVien;
             lblMaLHP.Text = lophocphan.malophocphan;
             lblGiaoVienPhuTrach.Text = lophocphan.giaovienphutrach;
             lblSoLuongDK.Text = lophocphan.soluongdangky.ToString();
             lblMinMax.Text = lophocphan.soluongmin.ToString() + "/" + lophocphan.soluongmax.ToString();
+
+            var dshocphan = HocPhan.GetHP();
+            List<SinhVien> lssv = new List<SinhVien>();
+            for(int i=0; i<dshocphan.Count; i++)
+            {
+                if (dshocphan[i].malophocphan.Equals(lophocphan.malophocphan))
+                {
+                    var sinhvien = SinhVien.Get1SV(dshocphan[i].masinhvien);
+                    lssv.Add(sinhvien);
+                }
+            }
+            bdsSinhVien.DataSource = lssv;
+            dgvSinhVien.DataSource = bdsSinhVien;
         }
+
     }
 }

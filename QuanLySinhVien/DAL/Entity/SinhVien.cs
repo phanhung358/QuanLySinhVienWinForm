@@ -16,17 +16,14 @@ namespace QuanLySinhVien.DAL.Entity
         public string ten { get; set; }
         public DateTime ngaysinh { get; set; }
         public string quequan { get; set; }
-        public string malophocphan { get; set; }
-        [ForeignKey("malophocphan")]
-        public virtual LopHocPhan LopHocPhan { get; set; }
 
         public static List<SinhVien> GetSV()
         {
             return new Context().SinhVienDbset.ToList();
         }
-        public static List<SinhVien> GetSVtheoMaLop(string malop)
+        public static SinhVien Get1SV(string masinhvien)
         {
-            return new Context().SinhVienDbset.Where(e => e.malophocphan == malop).ToList();
+            return new Context().SinhVienDbset.Where(e => e.masinhvien == masinhvien).Single();
         }
         public static void AddSV(SinhVien sv)
         {
@@ -53,7 +50,6 @@ namespace QuanLySinhVien.DAL.Entity
                 objSV.ten = danhBa.ten;
                 objSV.ngaysinh = danhBa.ngaysinh;
                 objSV.quequan = danhBa.quequan;
-                objSV.malophocphan = danhBa.malophocphan;
             }
             db.SaveChanges();
 
